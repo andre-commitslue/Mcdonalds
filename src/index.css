@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Inter:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-brand-red: #DB0007;
+  --color-brand-red-dark: #A00005;
+  --color-brand-yellow: #FFBC0D;
+  --color-brand-yellow-dark: #cc960a;
+  --color-brand-black: #1a1a1a;
+  --color-brand-gray: #f8fafc;
+  --color-brand-gray-dark: #475569;
+
+  --font-sans: "Inter", system-ui, sans-serif;
+  --font-display: "Poppins", system-ui, sans-serif;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-brand-gray);
+  color: var(--color-brand-black);
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.hide-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
